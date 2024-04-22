@@ -29,13 +29,11 @@ const homeController = require("../controller/homeController")
 
 const express = require("express");
 const router = express.Router();
-router.get('/', homeController.index)
+// router.get('/', homeController.index)
 
-// router.get("/", async (req, res, next) => {
-//   return res.status(200).json({
-//     title: "Express Testing",
-//     message: "The app is working properly!",
-//   });
-// });
+router.get("/", async (req, res, next) => {
+    return res.sendFile(path.join(__dirname, '../views/page/home.html'))
+
+});
 
 module.exports = router;
