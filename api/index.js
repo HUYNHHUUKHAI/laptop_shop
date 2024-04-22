@@ -2,8 +2,8 @@ const express = require('express')
 const app = express()
 const path = require('path')
 const port = 3000
-const router = require('./router/index')
-const initDB = require('./db/initDB')
+const router = require('./api/router/index')
+const initDB = require('./api/db/initDB')
 app.use(express.static(path.join(__dirname, 'src/views')));
 app.use(express.urlencoded())
 app.use(express.json())
