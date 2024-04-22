@@ -7,9 +7,13 @@ const brandController = require("../controller/brandController")
 
 function router(app) {
     //route page
-    app.get('/', (req, res) => {
-        return res.send("haha")
-    })
+
+    app.get("/", async (req, res, next) => {
+        return res.status(200).json({
+            title: "Express Testing",
+            message: "The app is working properly!",
+        });
+    });
     // app.get('/purchase', purchaseController.index)
     // app.get('/thanks', thanksController.index)
     // app.get('/historyoder', historyOder.index)
