@@ -23,7 +23,7 @@ fetch("http://localhost:3000/api/getalllaptop", {
             listLaptopHTML += `
              <div class="laptop">
                 <div class="laptop-img">
-                    <img src="../assets/`+ laptop.img + `" alt="">
+                    <img src="https://ik.imagekit.io/2b6hnescv/`+ laptop.img + `" alt="">
                 </div>
                 <div>
                     <p class="laptop-title">` + laptop.name + `</p>
@@ -43,7 +43,7 @@ fetch("http://localhost:3000/api/getalllaptop", {
             document.getElementById("text-result").innerText = 'Không tìm thấy kết quả liên quan đến "' + search + '"'
             document.getElementById("result").innerHTML = `
             <div class="not_found">
-                <img src="../assets/not_found.jpg" alt="">
+                <img src="https://ik.imagekit.io/2b6hnescv/not_found.jpg" alt="">
             </div>`
 
         }

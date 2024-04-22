@@ -20,7 +20,8 @@ fetch('http://localhost:3000/api/getlaptop', {
 
 
 
-document.getElementById('form').addEventListener('submit', async function (event) {
+document.getElementById('formPu').addEventListener('submit', async function (event) {
+    console.log("pu");
     event.preventDefault()
 
     let name = document.getElementById('name').value;
