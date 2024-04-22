@@ -1,4 +1,4 @@
-// const homeController = require("../controller/homeController")
+const homeController = require("../controller/homeController")
 // const purchaseController = require("../controller/purchaseController")
 // const thanksController = require("../controller/thanksController")
 // const historyOder = require("../controller/historyOderController")
@@ -29,12 +29,13 @@
 
 const express = require("express");
 const router = express.Router();
+router.get('/', homeController.index)
 
-router.get("/", async (req, res, next) => {
-  return res.status(200).json({
-    title: "Express Testing",
-    message: "The app is working properly!",
-  });
-});
+// router.get("/", async (req, res, next) => {
+//   return res.status(200).json({
+//     title: "Express Testing",
+//     message: "The app is working properly!",
+//   });
+// });
 
 module.exports = router;
