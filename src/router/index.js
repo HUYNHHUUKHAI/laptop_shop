@@ -32,7 +32,7 @@ const router = express.Router();
 // router.get('/', homeController.index)
 
 router.get("/", async (req, res, next) => {
-    return res.sendFile(path.join(__dirname, '../views/page/home.html'))
+    return res.sendFile("../views/page/home.html")
 
 });
 
