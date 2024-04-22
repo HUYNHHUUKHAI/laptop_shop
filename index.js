@@ -17,13 +17,12 @@ const express = require("express");
 // Middlewares
 const app = express();
 app.use(express.json());
-
+const { PrismaClient } = require("@prisma/client")
+const prisma = new PrismaClient
 // Routes
 app.get("/", async (req, res, next) => {
-    return res.status(200).json({
-        title: "Express Testing",
-        message: "The app is working properly!",
-    });
+    const listlaptops = await prisma.laptop.findMany()
+    return res.json(listlaptops);
 });
 // connection
 const port = process.env.PORT || 9001;
