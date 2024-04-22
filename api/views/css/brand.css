@@ -1,0 +1,226 @@
+html {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    height: 100px;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 100%;
+    cursor: pointer;
+}
+
+.search {
+    margin-left: 10px;
+    height: 50px;
+    width: 200px;
+    border: gold 2px solid;
+    border-radius: 5px;
+}
+form{
+    margin: 0;
+}
+.icon-search {
+    height: 25px;
+    width: auto;
+    position: relative;
+    left: -35px;
+    cursor: pointer;
+}
+
+
+.navbar {
+    display: flex;
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar li {
+    width: 100%;
+    /* height: 100px; */
+    display: block;
+    text-align: center;
+    align-self: center;
+    color: white;
+
+}
+
+.navbar li:hover {
+    background-color: #717171;
+    cursor: pointer;
+}
+
+.row-brand {
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+
+}
+
+.row-brand::-webkit-scrollbar {
+    display: none;
+}
+
+
+.brand {
+    display: flex;
+    border: 1px black solid;
+    border-radius: 30px;
+    height: 60px;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 15px;
+}
+
+.brand_selected{
+    display: flex;
+    border: 1px black solid;
+    border-radius: 30px;
+    height: 60px;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 15px;
+    background-color: #89ef609b;
+}
+
+.roundimg {
+    height: 40px;
+    width: 50px;
+}
+
+.brand:hover {
+   background-color: #0000001d;
+   cursor: pointer;
+}
+
+.brand-img {
+
+    /* height: 50px; */
+    width: 70px;
+}
+
+.new {
+    display: flex;
+    justify-content: center;
+}
+
+.new h1 {
+    text-decoration-line: underline;
+}
+
+
+
+.listlaptop {
+    margin: 0 10%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: gold;
+    margin-top: 10px;
+    justify-content: space-around;
+    padding: 0 20px 10px 20px;
+    border-radius: 12px;
+}
+
+.laptop {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    background-color: white;
+    padding-left: 10px;
+
+}
+
+.laptop-img {
+    width: 100%;
+    height: 100px;
+}
+
+.laptop-img img {
+    width: 100%;
+    height: 100px;
+}
+
+.laptop-title {
+    height: 70px;
+    width: 150px;
+    overflow: hidden;
+}
+
+.laptop-price {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: red;
+}
+
+.buy-laptop {
+    border: black 1px solid;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 8px;
+    height: 40px;
+    width: 80px;
+    margin: 10px 0;
+    border-radius: 12px;
+
+
+}
+
+.buy-laptop:hover {
+    background-color: rgb(46, 238, 46);
+    color: white;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.footer ul li {
+    display: block;
+}
+
+.footer ul li a {
+    text-decoration-line: none;
+    color: white;
+}
+
+.footer ul li :hover {
+    color: #889749 !important;
+
+}
+
+.footer_phone {
+    color: #889749 !important;
+}
+
+.end {
+    margin: 0 30px;
+}
+
+footer {
+    margin-top: 10px;
+    background-color: #1B2631;
+    color: white;
+    padding-bottom: 10px;
+
+}
