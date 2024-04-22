@@ -7,10 +7,11 @@
     ],
     "routes": [
       {
-        "dest": "/",
+        "dest": "./index.js",
         "src": "/(.*)"
       }
     ],
     "version": 2
   }
-  
+
+ 
