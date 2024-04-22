@@ -7,7 +7,9 @@ const brandController = require("../controller/brandController")
 
 function router(app) {
     //route page
-    // app.get('/', homeController.index) 
+    app.get('/', (req, res) => {
+        return res.send("haha")
+    })
     // app.get('/purchase', purchaseController.index)
     // app.get('/thanks', thanksController.index)
     // app.get('/historyoder', historyOder.index)
@@ -19,7 +21,7 @@ function router(app) {
     app.get('/api/getalllaptop', homeController.getAllLaptop)
     app.post('/api/getlaptop', purchaseController.getLaptop)
     app.get('/api/historyoder', historyOder.getHistoryOder)
-    app.post('/api/completeorder',thanksController.completePurechase)
+    app.post('/api/completeorder', thanksController.completePurechase)
 
 
 }
