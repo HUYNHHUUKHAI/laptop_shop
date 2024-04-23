@@ -7,18 +7,13 @@ const brandController = require("../controller/brandController")
 
 function router(app) {
     //route page
+    app.get('/purchase', homeController.index)
 
-    app.get("/", async (req, res, next) => {
-        return res.status(200).json({
-            title: "Express Testing",
-            message: "The app is working properly!",
-        });
-    });
-    // app.get('/purchase', purchaseController.index)
-    // app.get('/thanks', thanksController.index)
-    // app.get('/historyoder', historyOder.index)
-    // app.get('/search',searchController.index)
-    // app.get('/brand',brandController.index)
+    app.get('/purchase', purchaseController.index)
+    app.get('/thanks', thanksController.index)
+    app.get('/historyoder', historyOder.index)
+    app.get('/search', searchController.index)
+    app.get('/brand', brandController.index)
     //route api
 
     app.post('/api/purchase', purchaseController.payWithMoMoAtm)
