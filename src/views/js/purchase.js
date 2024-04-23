@@ -1,8 +1,9 @@
 let urlParam = new URLSearchParams(window.location.search)
 let laptopid = urlParam.get('laptopid')
+let url = "https://laptop-shop-qlw0.onrender.com"
 
 console.log(laptopid);
-fetch('http://localhost:3000/api/getlaptop', {
+fetch(url +'/api/getlaptop', {
     headers: {
         "Content-Type": "application/json",
 
@@ -28,7 +29,7 @@ document.getElementById('formPu').addEventListener('submit', async function (eve
     let phoneNumber = document.getElementById('phoneNumber').value;
     let email = document.getElementById('email').value;
     let address = document.getElementById('address').value;
-    await fetch("http://localhost:3000/api/purchase", {
+    await fetch(url+"/api/purchase", {
         headers: {
             "Content-Type": "application/json",
         },

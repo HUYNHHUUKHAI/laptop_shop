@@ -1,4 +1,6 @@
-fetch("http://localhost:3000/api/getalllaptop", {
+let url = "https://laptop-shop-qlw0.onrender.com"
+
+fetch(url+"/api/getalllaptop", {
     headers: {
         "Content-Type": "application/json",
     },

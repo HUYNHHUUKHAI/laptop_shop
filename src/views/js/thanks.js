@@ -1,7 +1,9 @@
 let urlParam = new URLSearchParams(window.location.search)
 let orderId = urlParam.get('orderId')
 console.log(orderId);
-fetch("http://localhost:3000/api/completeorder", {
+let url = "https://laptop-shop-qlw0.onrender.com"
+
+fetch(url + "/api/completeorder", {
     headers: {
         "Content-Type": "application/json",
     },

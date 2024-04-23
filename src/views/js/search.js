@@ -2,8 +2,9 @@ let urlParam = new URLSearchParams(window.location.search)
 let search = urlParam.get('search')
 
 
+let url = "https://laptop-shop-qlw0.onrender.com"
 
-fetch("http://localhost:3000/api/getalllaptop", {
+fetch(url+"/api/getalllaptop", {
     headers: {
         "Content-Type": "application/json",
     },
