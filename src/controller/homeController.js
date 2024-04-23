@@ -3,7 +3,8 @@ const { PrismaClient } = require("@prisma/client")
 const prisma = new PrismaClient
 class HomeController {
     index(req, res) {
-        res.sendFile(__dirname+ '/src/views/page/home.html')
+        res.sendFile(path.join(__dirname, '../views/page/home.html'))
+
     }
 
     async getAllLaptop(req, res) {

@@ -7,8 +7,7 @@ const brandController = require("../controller/brandController")
 
 function router(app) {
     //route page
-    app.get('/purchase', homeController.index)
-
+    app.get('/', homeController.index)
     app.get('/purchase', purchaseController.index)
     app.get('/thanks', thanksController.index)
     app.get('/historyoder', historyOder.index)
