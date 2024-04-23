@@ -16,8 +16,8 @@ class PurchaseController {
         let requestId = new Date().getTime();
         let orderId = requestId.toString();
         let orderInfo = req.body.name + "-" + laptop.name;
-        let redirectUrl = "http://localhost:3000/thanks";
-        let ipnUrl = "http://localhost:3000/thanks";
+        let redirectUrl = "https://laptop-shop-qlw0.onrender.com/thanks";
+        let ipnUrl = "https://laptop-shop-qlw0.onrender.com/thanks";
         let amount = Math.round(price * 1.1);
         let userInfo = {
             name: req.body.name,
