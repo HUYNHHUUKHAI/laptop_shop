@@ -1,4 +1,4 @@
-let url = "https://laptop-shop-qlw0.onrender.com"
+let url = "https://laptop-shop-p8dq.onrender.com"
 // let url = "http://localhost:3000"
 listLaptop = []
 

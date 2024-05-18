@@ -1,7 +1,7 @@
 let urlParam = new URLSearchParams(window.location.search)
 let orderId = urlParam.get('orderId')
 console.log("ahha",orderId);
-let url = "https://laptop-shop-qlw0.onrender.com"
+let url = "https://laptop-shop-p8dq.onrender.com"
 
 fetch(url + "/api/completeorder", {
     headers: {

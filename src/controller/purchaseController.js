@@ -16,8 +16,8 @@ class PurchaseController {
         let requestId = new Date().getTime();
         let orderId = requestId.toString();
         let orderInfo = req.body.name + "-" + laptop.name;
-        let redirectUrl = "https://laptop-shop-qlw0.onrender.com/thanks";
-        let ipnUrl = "https://laptop-shop-qlw0.onrender.com/thanks";
+        let redirectUrl = "https://laptop-shop-p8dq.onrender.com/thanks";
+        let ipnUrl = "https://laptop-shop-p8dq.onrender.com/thanks";
         let amount = Math.round(price * 1.1);
         let userInfo = {
             name: req.body.name,
@@ -124,24 +124,7 @@ class PurchaseController {
             where: {
                 id: laptopid * 1.0,
             },
-            select:{
-                id:true,
-                name:true,
-                price:true,
-                img:true,
-                card:true,
-                cpu:true,
-                design:true,
-                info:true,
-                os:true,
-                ram:true,
-                rom:true,
-                screen:true,
-                size:true,
-                time:true,
-                usb:true,
 
-            }
         })
         res.json(laptop)
     }

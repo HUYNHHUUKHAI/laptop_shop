@@ -1,6 +1,6 @@
 let urlParam = new URLSearchParams(window.location.search)
 let laptopid = urlParam.get('laptopid')
-let url = "https://laptop-shop-qlw0.onrender.com"
+let url = "https://laptop-shop-p8dq.onrender.com"
 // let url = "http://localhost:3000"
 
 console.log(laptopid);
