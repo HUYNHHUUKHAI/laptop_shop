@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý Laptop</title>
+    <link rel="stylesheet" href="../css/laptop_manager.css" />
+  </head>
+  <body>
+    <div class="drawer">
+      <div class="drawer-content">
+        <nav>
+          <ul>
+            <li><a href="/">Trang chủ</a></li>
+            <li><a href="/admin/laptopmanager">Danh sách Laptop</a></li>
+            <li><a href="/admin/addlaptop">Thêm laptop</a></li>
+            <li><a href="/admin/historyorder">Lịch sử giao dịch</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="main-content">
+      <h1>Danh sách Laptop</h1>
+      <input type="text" id="searchInput" placeholder="Tìm kiếm laptop..." />
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Laptop</th>
+              <th>Hình ảnh</th>
+              <th>Giá</th>
+              <th>Thông tin</th>
+              <th>CPU</th>
+              <th>RAM</th>
+              <th>Ổ cứng</th>
+              <th>Màn hình</th>
+              <th>Card</th>
+              <th>USB</th>
+              <th>Hệ điều hành</th>
+              <th>Thiết kế</th>
+              <th>Kích thước, cân nặng</th>
+              <th>Năm phát hành</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="../js/laptop_manager.js"></script>
+  </body>
+</html>

@@ -1,0 +1,233 @@
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/detailed.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header">
+        <img
+          onclick="window.location.href='/'"
+          class="logo"
+          src="https://ik.imagekit.io/2b6hnescv/logo.jpg"
+          alt=""
+        />
+        <form class="searchbar" id="form">
+          <input
+            id="search"
+            class="search"
+            type="text"
+            placeholder="Bạn tìm gì..."
+          />
+        </form>
+        <img
+          onclick="searchLaptop()"
+          class="icon-search"
+          src="../assets/search.svg"
+          alt=""
+        />
+      </div>
+    </header>
+    <div class="body">
+      <h2 class="title" id="title"></h2>
+      <div class="container">
+        <div class="left-container">
+          <div class="laptop-img" id="laptop-img"></div>
+          <div class="policy">
+            <ul class="policy__list">
+              <li>
+                <p>
+                  Hư gì đổi nấy <b>12 tháng</b> tại 3158 siêu thị toàn quốc
+                  (miễn phí tháng đầu)
+                  <a></a>
+                  <a title="Chính sách đổi trả"> Xem chi tiết </a>
+                </p>
+              </li>
+              <li data-field="IsSameBHAndDT">
+                <p>
+                  Bảo hành <b>chính hãng điện thoại 1 năm</b> tại các trung tâm
+                  bảo hành hãng
+                  <a target="_blank" title="Chính sách bảo hành">
+                    Xem địa chỉ bảo hành
+                  </a>
+                </p>
+              </li>
+
+              <li>
+                <p>Bộ sản phẩm gồm: Hộp, Sách hướng dẫn, Củ sạc</p>
+              </li>
+            </ul>
+          </div>
+          <h3>Thông tin sản phẩm</h3>
+          <p id="content">hhahahahaha</p>
+        </div>
+        <div class="right-container">
+          <p>Giá bán</p>
+          <p class="price" id="price">10 tyr</p>
+
+          <div class="block__promo">
+            <div class="pr-top">
+              <p class="pr-txtb">Khuyến mãi</p>
+              <i class="pr-txt"
+                >Giá và khuyến mãi dự kiến áp dụng đến 23:00 | 31/05</i
+              >
+            </div>
+            <div class="pr-content">
+              <div class="pr-item">
+                <div class="divb t3">
+                  <span class="nb">1</span>
+                  <div class="divb-right">
+                    <p>
+                      Balo/Túi chống sốc/Đế laptop/Miếng dán/Tai nghe dây/Tai
+                      nghe TWS AVA+/Loa di động/Loa vi tính giảm đến 50% (Không
+                      áp dụng khuyến mãi khác)
+                    </p>
+                  </div>
+                </div>
+                <div class="divb t3">
+                  <span class="nb">2</span>
+                  <div class="divb-right">
+                    <p>
+                      Thu cũ Đổi mới: Giảm đến 2 triệu (Tuỳ model máy cũ, Không
+                      kèm thanh toán qua cổng online, mua kèm)
+                      <a href=""> Xem chi tiết</a>
+                    </p>
+                  </div>
+                </div>
+                <div class="divb t3">
+                  <span class="nb">3</span>
+                  <div class="divb-right">
+                    <p>
+                      Cơ hội trúng 10 xe máy Yamaha Sirius mỗi tháng, tổng giải
+                      thưởng lên đến 390 Triệu
+                      <a href=""> Xem chi tiết</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block-button">
+            <a onclick="buy()" class="btn-buynow jsBuy">MUA NGAY</a>
+
+            <a href="" class="btn-ins pay-taichinh btn-left">
+              MUA TRẢ GÓP 0%
+              <span>Duyệt hồ sơ trong 5 phút</span>
+            </a>
+            <a href="" class="btn-ins pay-nganluong btn-right">
+              TRẢ GÓP 0% QUA THẺ
+              <span>Visa, Mastercard, JCB, Amex</span>
+            </a>
+          </div>
+          <h3 id="cauhinh">Cấu hình laptop</h3>
+          <ul class="parameter__list">
+            <li data-index="0" data-prop="0">
+              <p class="lileft">CPU:</p>
+              <div class="liright">
+                <span id="cpu"></span>
+              </div>
+            </li>
+            <li data-index="0" data-prop="0">
+              <p class="lileft">RAM:</p>
+              <div class="liright">
+                <span id="ram"></span>
+              </div>
+            </li>
+            <li data-index="0" data-prop="0">
+              <p class="lileft">Ổ cứng:</p>
+              <div class="liright">
+                <span id="rom"></span>
+              </div>
+            </li>
+            <li data-index="0" data-prop="0">
+              <p class="lileft">Màn hình:</p>
+              <div class="liright">
+                <span id="screen"></span>
+              </div>
+            </li>
+            <li data-index="0" data-prop="0">
+              <p class="lileft">Card màn hình:</p>
+              <div class="liright">
+                <span id="card"></span>
+              </div>
+            </li>
+            <li data-index="0" data-prop="0">
+              <p class="lileft">Cổng kết nối:</p>
+              <div class="liright">
+                <span id="usb"></span>
+              </div>
+            </li>
+            <li data-index="0" data-prop="0">
+              <p class="lileft">Hệ điều hành:</p>
+              <div class="liright">
+                <span id="os"></span>
+              </div>
+            </li>
+            <li data-index="0" data-prop="0">
+              <p class="lileft">Thiết kế:</p>
+              <div class="liright">
+                <span id="design"></span>
+              </div>
+            </li>
+            <li data-index="0" data-prop="0">
+              <p class="lileft">Kích thước, khối lượng:</p>
+              <div class="liright">
+                <span id="size"></span>
+              </div>
+            </li>
+            <li data-index="0" data-prop="0">
+              <p class="lileft">Thời điểm ra mắt:</p>
+              <div class="liright">
+                <span id="time"></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer">
+        <ul>
+          <li><a href="">Tích điểm Quà tặng VIP</a></li>
+          <li><a href="/admin/historyorder">Lịch sử đơn hàng</a></li>
+          <li><a href="">Tìm hiểu về mua trả góp</a></li>
+          <li><a href="">Chính sách bảo hành</a></li>
+        </ul>
+        <ul>
+          <li><a href="">Giới thiệu công ty</a></li>
+          <li><a href="">Tuyển dụng</a></li>
+          <li><a href="">Gửi góp ý, khiếu nại</a></li>
+          <li><a href="">Tìm hiểu siêu thị</a></li>
+          <li><a href="">Xem bản mobile</a></li>
+        </ul>
+        <ul>
+          <li>Tổng đài hổ trợ</li>
+          <li>
+            Khiếu nại <a class="footer_phone" href="">1800.1062</a>(8:00 -
+            21:30)
+          </li>
+          <li>
+            Bảo hành <a class="footer_phone" href="">1900 232 464</a>(8:00 -
+            21:00)
+          </li>
+        </ul>
+      </div>
+      <div class="end">
+        © 2018. Công ty cổ phần Thế Giới Di Động. GPDKKD: 0303217354 do sở KH &
+        ĐT TP.HCM cấp ngày 02/01/2007. GPMXH: 238/GP-BTTTT do Bộ Thông Tin và
+        Truyền Thông cấp ngày 04/06/2020. Địa chỉ: 128 Trần Quang Khải, P.Tân
+        Định, Q.1, TP.Hồ Chí Minh. Địa chỉ liên hệ và gửi chứng từ: Lô T2-1.2,
+        Đường D1, Đ. D1, P.Tân Phú, TP.Thủ Đức, TP.Hồ Chí Minh. Điện thoại: 028
+        38125960. Email: cskh@thegioididong.com. Chịu trách nhiệm nội dung:
+        Huỳnh Văn Tốt. Email: Tot.huynhvan@thegioididong.com. Xem chính sách sử
+        dụng
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+
+    <script src="../js/detailed.js"></script>
+  </body>
+</html>

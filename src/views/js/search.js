@@ -4,7 +4,7 @@ let search = urlParam.get('search')
 
 let url = "https://laptop-shop-qlw0.onrender.com"
 
-fetch(url+"/api/getalllaptop", {
+fetch(url + "/api/getalllaptop", {
     headers: {
         "Content-Type": "application/json",
     },
@@ -21,10 +21,16 @@ fetch(url+"/api/getalllaptop", {
 
 
         newdata.forEach(laptop => {
+            src = ""
+            if (laptop.img.length < 12) {
+                src = "https://ik.imagekit.io/2b6hnescv/" + laptop.img
+            } else {
+                src = laptop.img
+            }
             listLaptopHTML += `
              <div class="laptop">
                 <div class="laptop-img">
-                    <img src="https://ik.imagekit.io/2b6hnescv/`+ laptop.img + `" alt="">
+                    <img src="`+ src + `" alt="">
                 </div>
                 <div>
                     <p class="laptop-title">` + laptop.name + `</p>

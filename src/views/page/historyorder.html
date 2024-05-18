@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/historyorder.css" />
+  </head>
+  <body>
+    <div class="drawer">
+      <div class="drawer-content">
+        <nav>
+          <ul>
+            <li><a href="/">Trang chủ</a></li>
+            <li><a href="/admin/laptopmanager">Danh sách Laptop</a></li>
+            <li><a href="/admin/addlaptop">Thêm laptop</a></li>
+            <li><a href="/admin/historyorder">Lịch sử giao dịch</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="main-content">
+      <h1>Danh sách lịch sử đơn hàng</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>User</th>
+            <th>Laptop</th>
+            <th>Delivery</th>
+            <th>Total Price</th>
+            <th>Status</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+
+    <script src="../js/historyoder.js"></script>
+  </body>
+</html>

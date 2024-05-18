@@ -246,6 +246,11 @@ form{
 
 }
 
+.laptop:hover {
+    background-color: rgb(176, 172, 172);
+    cursor: pointer;
+}
+
 .laptop-img {
     width: 100%;
     height: 100px;

@@ -145,8 +145,13 @@ form{
     width: 18%;
     background-color: white;
     padding-left: 10px;
-
 }
+
+.laptop:hover {
+    background-color: rgb(176, 172, 172);
+    cursor: pointer;
+}
+
 
 .laptop-img {
     width: 100%;

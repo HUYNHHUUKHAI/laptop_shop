@@ -1,6 +1,8 @@
 let url = "https://laptop-shop-qlw0.onrender.com"
+// let url = "http://localhost:3000"
 
-fetch(url+"/api/getalllaptop", {
+
+fetch(url + "/api/getalllaptop", {
     headers: {
         "Content-Type": "application/json",
     },
@@ -10,21 +12,23 @@ fetch(url+"/api/getalllaptop", {
 })
     .then(data => {
         let listLaptopHTML = ""
-        data.forEach(laptop => {
-            if (laptop.id <= 20) {
-
+        data.forEach((laptop, idx) => {
+            if (idx < 15) {
+                src = ""
+                if (laptop.img.length < 12) {
+                    src = "https://ik.imagekit.io/2b6hnescv/" + laptop.img
+                } else {
+                    src = laptop.img
+                }
                 listLaptopHTML += `
-                 <div class="laptop">
+                 <div class="laptop" onclick="window.location.href ='detailed?laptopid=`+ laptop.id + `'">
                     <div class="laptop-img">
-                        <img src="https://ik.imagekit.io/2b6hnescv/`+ laptop.img + `" alt="">
+                    <img src="`+ src + `" alt="">
                     </div>
                     <div>
                         <p class="laptop-title">` + laptop.name + `</p>
                     </div>
                     <div class="laptop-price">`+ laptop.price.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' }) + `</div>
-                    <div class="buy-laptop" onclick="window.location.href ='purchase?laptopid=`+ laptop.id + `'">
-                        <p>mua</p>
-                    </div>
                 </div>`
             }
         })

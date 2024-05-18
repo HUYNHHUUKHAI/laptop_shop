@@ -1,6 +1,7 @@
 let url = "https://laptop-shop-qlw0.onrender.com"
+// let url = "http://localhost:3000"
 
-fetch(url+"/api/historyoder", {
+fetch(url+"/api/historyorder", {
     headers: {
         "Content-Type": "application/json",
     },

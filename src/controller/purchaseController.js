@@ -124,14 +124,9 @@ class PurchaseController {
             where: {
                 id: laptopid * 1.0,
             },
-            select: {
-                name: true,
-                price: true
-            }
         })
         res.json(laptop)
     }
-
 }
 
 
