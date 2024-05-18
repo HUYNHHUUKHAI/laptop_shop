@@ -8,7 +8,26 @@ class HomeController {
     }
 
     async getAllLaptop(req, res) {
-        const listlaptops = await prisma.laptop.findMany()
+        const listlaptops = await prisma.laptop.findMany({
+            select: {
+                id: true,
+                name: true,
+                price: true,
+                img: true,
+                card: true,
+                cpu: true,
+                design: true,
+                info: true,
+                os: true,
+                ram: true,
+                rom: true,
+                screen: true,
+                size: true,
+                time: true,
+                usb: true,
+
+            }
+        })
         res.json(listlaptops);
     }
 

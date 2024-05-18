@@ -124,6 +124,24 @@ class PurchaseController {
             where: {
                 id: laptopid * 1.0,
             },
+            select:{
+                id:true,
+                name:true,
+                price:true,
+                img:true,
+                card:true,
+                cpu:true,
+                design:true,
+                info:true,
+                os:true,
+                ram:true,
+                rom:true,
+                screen:true,
+                size:true,
+                time:true,
+                usb:true,
+
+            }
         })
         res.json(laptop)
     }
