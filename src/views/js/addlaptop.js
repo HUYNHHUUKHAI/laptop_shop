@@ -36,10 +36,10 @@ document.getElementById('addLaptopForm').addEventListener('submit', async functi
         .then(data => {
             console.log(data);
             alert("Thêm thành công");
-            window.location.href ='detailed?laptopid='+data.id
+            window.location.href ='/detailed?laptopid='+data.id
 
         }).catch(err => {
-            console.log(err);
+            console.log(err);   
         })
 
 });
